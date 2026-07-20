@@ -1,0 +1,527 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* BODY */
+
+body {
+    background: #0b0d0f;
+    /* note to self: normal text color */
+    color:#d1d5db;
+}
+
+/* HEADER */
+
+header {
+
+    background: #0b1220;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    padding: 15px 30px;
+    border-bottom: 1px solid #788496;
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, .4);
+
+}
+
+/* NAVBAR */
+
+.navbar {
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: left;
+
+    flex-wrap: wrap;
+
+}
+
+/* LEFT SIDE */
+
+.logo-section {
+
+    display: flex;
+
+    align-items: left;
+
+    gap: 20px;
+
+}
+
+.logo-section img {
+
+    width: 70px;
+    height: 70px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+}
+
+
+.logo-section h2 {
+
+  /*  color: white;*/
+
+      /* Define the gradient colors and direction */
+  background: linear-gradient(70deg,  rgb(255, 113, 48), #ffecf3);
+  
+  /* Clip the background to the text shape */
+  background-clip: text;
+  
+  /* Make the text color transparent to reveal the gradient */
+  color: transparent;
+
+}
+
+.logo-section p {
+
+    color: #cbd5e1;
+
+    margin-top: 5px;
+
+}
+
+/* NAVIGATION */
+
+nav {
+
+    display: flex;
+
+    justify-content: left;
+    align-items: center;
+
+    gap: 20px;
+
+    flex-wrap: nowrap;
+
+}
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: .3s;
+
+    white-space: nowrap;
+
+}
+
+nav a:hover {
+
+    /*color:#21ff85;*/
+    color:
+        rgb(255, 113, 48);
+
+}
+
+/* HERO */
+
+#home{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+#home div{
+
+    max-width:600px;
+
+}
+
+#home h2,
+#home p{
+
+    line-height:1.6;
+
+}
+
+.gradient {
+
+    background:
+        linear-gradient(to left,
+            #1d5dff,
+            #21ff85);
+
+    text-align: center;
+
+    color: white;
+
+    padding: 45px 20px;
+
+}
+
+.gradient h1 {
+
+    font-size: 3rem;
+
+}
+
+/* TITLES */
+
+h2 {
+
+    /*color:
+        rgb(255, 113, 48);
+    /*border-bottom:  1px solid #788496;*/
+
+          /* Define the gradient colors and direction */
+  background: linear-gradient(70deg, rgb(255, 113, 48), #ffecf3);
+  
+  /* Clip the background to the text shape */
+  background-clip: text;
+  
+  /* Make the text color transparent to reveal the gradient */
+  color: transparent;
+
+}
+
+h3 {
+
+    color: rgb(255, 113, 48);
+    
+    margin-top:20px;
+}
+
+
+h4 {
+
+    color: white;
+
+}
+
+a {
+
+    color: #d1d5db;
+    text-decoration:none;
+    transition:.3s;
+
+}
+
+a:hover{
+
+    /*color:#21ff85;*/
+    color:
+        rgb(255, 113, 48);
+
+}
+
+/* CARDS */
+
+.card {
+
+    width: 75%;
+
+    margin: 40px auto;
+
+    padding: 30px;
+
+    /*background: #1f2937;*/
+
+    border: 1px solid #788496;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 0 15px rgba(0, 0, 0, .5);
+
+}
+
+ul{
+    padding-left:40px;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+/* PROFILE */
+
+.profile {
+
+    width: 180px;
+
+    border-radius: 50%;
+
+    display: block;
+
+    margin: auto;
+
+}
+
+
+
+/* CONTACT */
+
+#contact table {
+
+    border-spacing: 5px 2px;
+    /*border-top: 1px solid #788496;*/
+    margin: 10px 0;
+
+}
+
+#contact td {
+
+    padding: 2px;
+
+}
+
+/*td, th{
+                
+    border-bottom: 1px solid #788496;
+           
+        }*/
+
+#contact td:first-child {
+
+    width: 120px;
+
+    color: white;
+
+    font-weight: bold;
+
+}
+
+/* SOCIALS */
+
+.socials a {
+
+    color: white;
+
+    margin-right: 20px;
+
+    text-decoration: none;
+
+}
+
+/* FOOTER */
+
+footer {
+
+    text-align: left;
+    border-top: 1px solid #788496;
+    padding: 30px;
+
+}
+
+/* PROJECTS */
+
+.projects-grid {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    margin-top: 30px;
+
+}
+
+.project-card {
+
+    width: 300px;
+
+    background: #222;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.project-card:hover {
+
+    transform:
+        translateY(-10px);
+
+    box-shadow:
+        0 0 5px rgb(255, 113, 48);
+
+}
+
+.project-card img {
+
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+
+}
+
+.project-card h3 {
+
+    text-align: center;
+
+    padding: 20px;
+
+}
+
+/* MODAL */
+
+.modal {
+
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    background:
+        rgba(26, 36, 61, 0.5);
+
+    z-index: 999;
+
+}
+
+.modal-content {
+
+    width: 70%;
+
+    max-width: 800px;
+
+    max-height: 80vh;
+
+    overflow-y: auto;
+
+    margin: 70px auto;
+
+    background: #222;
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    position: relative;
+
+    animation: popup .3s;
+
+}
+
+.modal-content img {
+
+    display: block;
+
+    width: 70%;
+
+    max-height: 300px;
+
+    object-fit: contain;
+
+    margin: 0 auto 25px auto;
+
+    border-radius: 15px;
+
+}
+
+#modalDescription {
+
+    white-space: pre-line;
+
+}
+
+/* CLOSE BUTTON */
+
+.close {
+
+    position: absolute;
+
+    right: 20px;
+
+    top: 10px;
+
+    font-size: 40px;
+
+    cursor: pointer;
+
+}
+
+/* ANIMATION */
+
+@keyframes popup {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            scale(.8);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            scale(1);
+
+    }
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px) {
+
+    .navbar {
+
+        flex-direction: column;
+
+        gap: 20px;
+
+    }
+
+    nav {
+
+        gap: 12px;
+
+        overflow-x: auto;
+
+    }
+
+    nav a {
+
+        font-size: 14px;
+
+    }
+
+    .modal-content {
+
+        width: 90%;
+
+    }
+
+    .modal-content img {
+
+        width: 100%;
+
+    }
+
+}
