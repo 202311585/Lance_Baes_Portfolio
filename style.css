@@ -553,6 +553,27 @@ footer {
 
     }
 
+    #contact table,
+    #contact tbody,
+    #contact tr,
+    #contact td{
+
+        display:block;
+        width:100%;
+    }
+
+    #contact tr{
+        margin-bottom:15px;
+        border-bottom:1px solid #788496;
+        padding-bottom:10px;
+    }
+
+    #contact td{
+        border:none;
+        padding:5px 0;
+    }
+
+
 
 
 }
