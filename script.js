@@ -40,7 +40,7 @@ const d3 = `
 This project is technically a WIP, but I wanted to include it here because it is technically a project that I am currently working on.<br>
 (Also for a bit more variety for this final project submission.)<br><br>
 
-The mod is primarily an experiment in implementing various gameplay concepts in Terraria using tModLoader, while also serving as a way to test whether some of my ideas are actually feasible in a game environment. Beyond that, it is simply a "fun" side project.<br><br><br>
+The mod is primarily an experiment in implementing various gameplay concepts in Terraria using tModLoader, while also serving as a way to test whether some of my ideas are actually feasible in a game environment. Beyond that, it is simply a "fun" side project.<br><br><br><br>
 </p>
 
 <img src="gifs/pulseriflescuffeddemo.gif"
@@ -53,10 +53,10 @@ My first WIP weapon is a customized Pulse Rifle, designed specifically for shred
 
 <b>Alternate Fire:</b> Emits a sustained particle beam that ignores invulnerability frames and functions similarly to the Inferno Tower from Clash of Clans. The beam continuously ramps up in damage the longer it remains focused on a target, eventually dealing damage based on increasing percentages of the enemy's maximum HP (values are still being tweaked).<br><br>
 
-The trade-off, aside from its slower firing speed, is that its mana consumption increases exponentially and the attack cannot be cancelled until the player's mana is completely depleted.<br><br>
+The trade-off, aside from its slower firing speed, is that its mana consumption increases exponentially and the attack cannot be cancelled until the player's mana is completely depleted.<br>
 
-<i>(The laser currently does not render properly due to unresolved code issues, although the damage calculations are already functional.)</i>
-</p><br><br><br>
+<i>(The laser currently does not render properly due to unresolved code issues, although the damage calculations are already functional.)</i><br><br><br><br>
+</p>
 
 <img src="gifs/gcpwingsscuffeddemo.gif"
      class="modal-gif">
@@ -66,7 +66,7 @@ My first accessory features one of the more technically ambitious systems I have
 
 The accessory, tentatively named <b>GCP Wings</b>, is a high-mobility item that grants the player a dash with temporary invulnerability, a spinning animation, and hovering capabilities.<br><br>
 
-Its current sprite is merely a placeholder, as I am not yet particularly skilled at pixel art. However, I plan to create a custom sprite for it in the future.
+Its current sprite is merely a placeholder, as I am not yet particularly skilled at pixel art. However, I plan to create a custom sprite for it in the future.<br>
 </p>
 `;
 
