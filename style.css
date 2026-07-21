@@ -142,19 +142,11 @@ nav a:hover {
 
 }
 
-#home h2,
-#home p{
-
-    line-height:1.6;
-
-}
-
-
 
 /* ctrlf for header */
 
 h2 {
-
+     margin:0 0 10px 0;
     /*color:
         rgb(255, 113, 48);
     /*border-bottom:  1px solid #788496;*/
@@ -175,6 +167,7 @@ h3 {
     color: rgb(255, 113, 48);
     
     margin-top:20px;
+    margin-bottom:10px;
 }
 
 
@@ -185,7 +178,7 @@ h4 {
 }
 p{
 
-    margin: 10px 5;
+    margin: 5px 0;
 
 }
 
