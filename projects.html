@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="2023311585 IT0043L TC07 FINAL PROJECT ">
+    <meta name="keyword" content="FEU TECH STUDENT">
+
+    <title>BAES, LANCE JEROME M. | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="navbar">
+
+            <div class="logo-section">
+
+                <!--<img src="profile.png" alt="Profile Picture">-->
+
+                <div>
+
+                    <h2>
+                        Baes, Lance Jerome M.
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <nav>
+
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="resume.html">Resume</a>
+                <a href="contact.html">Contact</a>
+
+            </nav>
+
+        </div>
+
+    </header>
+    <!--
+    <section id="home" class="card">
+
+        <img src="images/ID.jpg" width="150" height="150" alt="Profile Picture">
+
+
+        <div>
+            <h2>Hello, I am Lance Jerome Baes. It is nice to meet you.</h2>
+
+
+            <p>
+                I am a student who enjoys programming, web development, and learning new technologies. I aim to improve
+                my skills and become a successful IT professional or a good game dev someday.
+            </p>
+        </div>
+    </section>
+
+    <section id="about" class="card">
+        <h2>About Me</h2>
+                    <p>
+                BSITAGD Student |
+                Aspiring Game Developer |
+                Progamer
+            </p>
+
+        <h3>Background</h3>
+
+        <p>
+            Currently studying Information Technology with interests in
+            software engineering, database administration, web development,
+            and game modding.
+        </p>
+
+        <h3>Interests</h3>
+
+        <ul>
+            <li>Playing Video games 「Warframe, Blue Archive, Mecharashi, Mobile Legends and Pokemon(emulator)」</li>
+            <li>Making plastic models 「Gundam and 30mm」</li>
+            <li>Game development/ Mald coding</li>
+            <li>Sci-fi or military vehicles</li>
+            <li>Watching anime</li>
+            <li>Sightseeing</li>
+            <li>Mechanics</li>
+
+        </ul>
+
+        <h3>Goals</h3>
+
+        <p>
+            To become a skilled developer capable of designing efficient,
+            user-friendly applications and contributing to innovative projects.
+            and to able to make and implement my funny weapon concepts in a proper, optimized state.
+        </p>
+
+        <h3>Skills</h3>
+
+        <p>Has understanding in:</p>
+        <ul>
+            
+            <li>C++</li>
+            <li>Java</li>
+            <li>Python</li>
+
+
+        </ul>
+
+        <p>Has partial understanding in:</p>
+        <ul>
+            <li>C#</li>
+            <li>HTML/CSS</li>
+            <li>Photoshop</li>
+            <li>Drawing and concept art</li>
+
+
+        </ul>
+
+
+    </section>
+
+-->
+
+    <section id="projects" class="card">
+
+        <h2>Projects</h2>
+
+        <p>
+            Here are some of the projects I have worked on, no major ones as I am still a student and lack experience,
+            but I have completed several programming assignments and personal projects that showcase my skills and
+            interests in software development and game modding.
+        </p>
+
+
+        <div class="projects-grid">
+
+            <div class="project-card" onclick="showProject(
+             'Final Project in OBJECT-ORIENTED PROGRAMMING (CCS0023)',
+             'images/grsys.PNG',
+             d1
+             )">
+
+                <img src="images/grsys.PNG">
+
+                <h3>
+                    Student Grading Management System
+                </h3>
+
+            </div>
+
+
+            <div class="project-card" onclick="showProject(
+             'Final Project in INTEGRATIVE PROGRAMMING AND TECHNOLOGIES (IT0011)',
+             'images/banksys.PNG',
+             d2
+             )">
+
+                <img src="images/banksys.PNG">
+
+                <h3>
+                    Bank Account Management System
+                </h3>
+
+            </div>
+
+
+            <div class="project-card" onclick="showProject(
+            '[KEKMOD1] Terraria Mod Development',
+            null,
+            d3
+            )">
+
+                <img src="images/icon.png">
+
+                <h3>
+                    Terraria Mod Development
+                </h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Modal -->
+
+    <div id="projectModal" class="modal">
+
+        <div class="modal-content">
+
+            <span class="close" onclick="closeModal()">
+
+                &times;
+
+            </span>
+
+            <img id="modalImage">
+
+            <h2 id="modalTitle"></h2>
+
+            <div id="modalDescription"></div>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+        © 2026 Lance Baes [Portfolio]
+        <p>
+            BSITAGD Student |
+            Aspiring Game Developer |
+            Progamer
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

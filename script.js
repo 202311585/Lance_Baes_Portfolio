@@ -30,31 +30,50 @@ The program includes a menu interface that allows the user to choose different o
 
 The system uses file input and output to make sure that the data is saved in a .txt file so that records can still be accessed even after the program is closed.
 
-This project demonstrates the use of programming concepts taught in class.
+This project demonstrates the use of most of the programming concepts taught in IT0011.
 
 The system is designed to be simple, easy to use, and effective for managing basic banking records.
 `;
 
 
 const d3 = `
-Developed custom Terraria content
-using C# and tModLoader.
+<p>
+This project is technically a wip, but i wanted to include it here because it is technically a project that I am currently working on.
+(also for a bit more variety for this final project submission)
 
-Features:
+The mod is primarily an experiment in implementing various gameplay concepts in Terraria using tModLoader, while also serving as a way to test whether some of my ideas are actually feasible in a game environment. Beyond that, it is simply a fun side project.
 
-• Custom weapons
 
-• Accessories
 
-• Projectile programming
+</p>
 
-• Particle effects
 
-• Gameplay mechanics
+<img src="gifs/pulseriflescuffeddemo.gif"
+     class="modal-gif
+">
+<p>
+My first wip weapon is a customized Pulse Rifle, designed specifically for shredding high-health and heavily armored targets.
 
-• Mod balancing.
+Primary Fire: Fires high-velocity energy rounds whose effectiveness scales with enemy defense. Against enemies with extremely high defense values (150+), the weapon can effectively bypass invulnerability frames, rapidly stacking damage while also dealing additional damage based on a percentage of the enemy's maximum HP.
+Alternate Fire: Emits a sustained particle beam that ignores invulnerability frames and functions similarly to the Inferno Tower from Clash of Clans. The beam continuously ramps up in damage the longer it remains focused on a target, eventually dealing damage based on increasing percentages of the enemy's maximum HP (values are still being tweaked). The trade-off, aside from its slower firing speed, is that its mana consumption increases exponentially and the attack cannot be cancelled until the player's mana is completely depleted.
+(The laser currently does not render properly due to unresolved code issues, although the damage calculations are already functional.)
+
+
+
+</p>
+
+<img src="gifs/gcpwingsscuffeddemo.gif"
+     class="modal-gif
+">
+<p>
+My first accessory features one of the more technically ambitious systems I have implemented so far, combining the functionality of a flight accessory, dash accessory, and hover accessory into a single equipment slot.
+
+The accessory, tentatively named GCP Wings, is a high-mobility item that grants the player a dash with temporary invulnerability, a spinning animation, and hovering capabilities.
+
+Its current sprite is merely a placeholder, as I am not yet particularly skilled at pixel art. However, I plan to create a custom sprite for it in the future.
+</p>
+
 `;
-
 
 
 function showProject(
@@ -67,20 +86,41 @@ function showProject(
         "modalTitle"
     ).textContent = title;
 
-    document.getElementById(
-        "modalImage"
-    ).src = image;
+    const modalImage =
+        document.getElementById(
+            "modalImage"
+        );
+
+    if(image){
+
+        modalImage.src = image;
+
+        modalImage.style.display =
+            "block";
+
+    }
+    else{
+
+        modalImage.style.display =
+            "none";
+
+            modalImage.removeAttribute(
+                "src"
+            );
+
+    }
 
     document.getElementById(
         "modalDescription"
-    ).innerText = description;
+    ).innerHTML =
+        description;
 
     document.getElementById(
         "projectModal"
-    ).style.display = "block";
+    ).style.display =
+        "block";
 
 }
-
 
 
 function closeModal(){
