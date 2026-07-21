@@ -241,15 +241,6 @@ li{
 
 }
 
-#about {
-    display:flex;
-
-    gap:30px;
-
-    align-items:flex-start;
-}
-
-
 
 .about-container{
 
@@ -286,10 +277,10 @@ li{
 
 #contact table {
 
-    border-spacing: 5px 2px;
+
     border-top: 1px solid #788496;
     margin: 10px 0;
-     border-collapse:collapse;
+    border-collapse:collapse;
 
 }
 
@@ -335,15 +326,7 @@ footer {
 
 }
 
-@media(max-width:768px){
 
-    footer{
-
-        padding-left:50px;
-
-    }
-
-}
 
 /* ctrlf for PROJECTS */
 
@@ -550,5 +533,28 @@ footer {
         width: 100%;
 
     }
+
+
+    .about-container{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    #about img{
+
+        margin:0 0 20px 0;
+
+    }
+    
+    footer{
+
+        padding-left:50px;
+
+    }
+
+
 
 }
