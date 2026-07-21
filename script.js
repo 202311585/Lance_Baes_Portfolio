@@ -41,7 +41,7 @@ const d3 = `
 This project is technically a wip, but i wanted to include it here because it is technically a project that I am currently working on.
 (also for a bit more variety for this final project submission)
 
-The mod is primarily an experiment in implementing various gameplay concepts in Terraria using tModLoader, while also serving as a way to test whether some of my ideas are actually feasible in a game environment. Beyond that, it is simply a fun side project.
+The mod is primarily an experiment in implementing various gameplay concepts in Terraria using tModLoader, while also serving as a way to test whether some of my ideas are actually feasible in a game environment. Beyond that, it is simply a "fun" side project.
 
 
 
